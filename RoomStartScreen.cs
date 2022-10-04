@@ -24,8 +24,6 @@ namespace MazeHouse
         //player
         Texture2D player;
         Vector2 playerPosition;
-        int playerSize = 24;
-        int playerSpeed = 5;
 
         //Door
         public Texture2D doorTest;

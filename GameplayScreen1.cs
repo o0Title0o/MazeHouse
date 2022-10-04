@@ -24,8 +24,7 @@ namespace MazeHouse
         //player
         Texture2D player;
         Vector2 playerPosition;
-        int playerSize = 24;
-        int playerSpeed = 5;
+
 
         //Door
         public Texture2D doorTest;
@@ -114,7 +113,7 @@ namespace MazeHouse
             if (playerRectangle.Intersects(DoorTestRectangle) == true)
             {
                 playerPosition = new Vector2(120*2, 120*4);
-                ScreenEvent.Invoke(game.mRuleScreen, new EventArgs());
+                ScreenEvent.Invoke(game.mWinScreen, new EventArgs());
                 return;
             }
 

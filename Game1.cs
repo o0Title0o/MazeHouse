@@ -14,6 +14,7 @@ namespace MazeHouse
         public Screen mCurrentScreen;
         public TitleScreen mTitleScreen;
         public RuleScreen mRuleScreen;
+        public WinScreen mWinScreen;
         public RoomStartScreen mRoomStartScreen;
 
         public GameplayScreen1 mGameplayScreen1;
@@ -40,11 +41,10 @@ namespace MazeHouse
             //Screen
             mTitleScreen = new TitleScreen(this, new EventHandler(GameplayScreenEvent));
             mRuleScreen = new RuleScreen(this, new EventHandler(GameplayScreenEvent));
+            mWinScreen = new WinScreen(this, new EventHandler(GameplayScreenEvent));
             mRoomStartScreen = new RoomStartScreen(this, new EventHandler(GameplayScreenEvent));
-
             mGameplayScreen1 = new GameplayScreen1(this, new EventHandler(GameplayScreenEvent));
             mGameplayScreen2 = new GameplayScreen2(this, new EventHandler(GameplayScreenEvent));
-
             mCurrentScreen = mTitleScreen;
 
         }
