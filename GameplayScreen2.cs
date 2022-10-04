@@ -11,7 +11,7 @@ namespace MazeHouse
     {
         Texture2D gameplayTexture;
         Game1 game;
-
+        
         //Animation of player
         int direction;
         int frame;
